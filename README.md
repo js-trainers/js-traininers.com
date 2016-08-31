@@ -1,1 +1,3 @@
-Official website of JS-Trainers.com. Follow us [@js-trainers](https://twitter.com/js-trainers)
+# JS-Trainers
+
+Official website of JS-Trainers.com. Follow us [@JSTrainers](https://twitter.com/JSTrainers)
