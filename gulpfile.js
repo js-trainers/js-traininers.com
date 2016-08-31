@@ -1,15 +1,8 @@
+'use strict';
+
 var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
-var serve = require('gulp-serve');
+var sass = require('./gulp/sass');
+var server = require('./gulp/server');
+var deploy = require('./gulp/deploy');
 
-gulp.task('server', serve({
-  root: ['./public'],
-  port: 8080
-}));
-
-gulp.task('deploy', function() {
-  return gulp.src('./public/**/*')
-    .pipe(ghPages());
-});
-
-gulp.task('default', ['server'])
+gulp.task('default', ['sass', 'watch:sass', 'server']);
