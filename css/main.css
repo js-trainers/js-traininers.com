@@ -124,14 +124,14 @@ button:not(.no-theme), a.button {
 body {
   background: #F7DF1E; }
 
-code {
-  display: block;
+main {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
   margin: 2em;
   margin-right: 4em;
-  max-width: 500px;
-  font-size: 0.8em; }
+  max-width: 500px; }
   @media (min-width: 750px) {
-    code {
+    main {
       font-size: 1em; } }
 
 .logo {
