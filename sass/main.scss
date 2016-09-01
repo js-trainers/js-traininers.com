@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/**
+ * Utils
+ */
+
+@import "vars";
+@import "mixins/layout";
+@import "mixins/buttons";
+
+
+/**
+ * Base
+ */
+
+@import "base/defaults";
+
+
+/**
+ * Components
+ */
+
+@import "components/copy";
+@import "components/buttons";
+
+
+/**
+ * Splash Page
+ */
+
+body {
+  //background: linear-gradient(-20deg, $yellow, rgba($yellow, 0.5)), url('/images/bg.png');
+  background: $yellow;
+}
+
+code {
+  display: block;
+  margin: 2em;
+  margin-right: 4em;
+  max-width: 500px;
+}
+
+.logo {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  width: 60px;
+
+  @media (min-width: 750px) {
+    width: 200px;
+  }
+}

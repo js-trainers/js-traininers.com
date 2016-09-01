@@ -11,7 +11,7 @@ gulp.task('clean:css', function (cb) {
 });
 
 gulp.task('sass', ['clean:css'], function () {
-  return gulp.src('./scss/*.scss')
+  return gulp.src('./sass/*.scss')
     .pipe(sass({
       includePaths: ['scss']
     }).on('error', sass.logError))
@@ -20,5 +20,5 @@ gulp.task('sass', ['clean:css'], function () {
 });
 
 gulp.task('watch:sass', function () {
-  return gulp.watch('./scss/**/*', ['sass']);
+  return gulp.watch('./sass/**/*', ['sass']);
 });
