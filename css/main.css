@@ -128,7 +128,11 @@ code {
   display: block;
   margin: 2em;
   margin-right: 4em;
-  max-width: 500px; }
+  max-width: 500px;
+  font-size: 0.8em; }
+  @media (min-width: 750px) {
+    code {
+      font-size: 1em; } }
 
 .logo {
   position: fixed;
